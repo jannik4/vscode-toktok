@@ -1,0 +1,27 @@
+{
+  "name": "toktok",
+  "displayName": "toktok",
+  "description": "toktok syntax highlighting",
+  "version": "0.0.1",
+  "engines": {
+    "vscode": "^1.21.0"
+  },
+  "contributes": {
+    "languages": [
+      {
+        "id": "toktok",
+        "extensions": [
+          ".toktok",
+          ".tt"
+        ]
+      }
+    ],
+    "grammars": [
+      {
+        "language": "toktok",
+        "scopeName": "source.toktok",
+        "path": "./syntaxes/toktok.tmGrammar.json"
+      }
+    ]
+  }
+}

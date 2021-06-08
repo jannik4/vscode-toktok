@@ -1,0 +1,62 @@
+{
+  "name": "toktok",
+  "scopeName": "source.toktok",
+  "patterns": [
+    {
+      "include": "#keywords"
+    },
+    {
+      "include": "#strings"
+    },
+    {
+      "include": "#comments"
+    }
+  ],
+  "repository": {
+    "comments": {
+      "patterns": [
+        {
+          "name": "comment.line.toktok",
+          "match": "//.*"
+        },
+        {
+          "name": "comment.block.toktok",
+          "begin": "/\\*",
+          "end": "\\*/",
+          "patterns": [{ "include": "#comments" }]
+        }
+      ]
+    },
+    "keywords": {
+      "patterns": [
+        {
+          "name": "keyword.other.toktok",
+          "match": "\\b(as|break|const|continue|crate|else|enum|extern|false|fn|for|if|impl|in|let|loop|match|mod|move|mut|pub|ref|return|self|Self|static|struct|super|trait|true|type|unsafe|use|where|while|async|await|dyn)\\b"
+        },
+        {
+          "name": "keyword.control.toktok",
+          "match": "\\$([0-9]+|span)"
+        },
+        {
+          "name": "variable.name.toktok",
+          "match": "[a-zA-Z_][a-zA-Z0-9_]*"
+        }
+      ]
+    },
+    "strings": {
+      "patterns": [
+        {
+          "name": "string.quoted.single.toktok",
+          "begin": "'",
+          "end": "'",
+          "patterns": [
+            {
+              "name": "constant.character.escape.toktok",
+              "match": "\\\\."
+            }
+          ]
+        }
+      ]
+    }
+  }
+}
