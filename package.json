@@ -2,7 +2,7 @@
   "name": "toktok",
   "displayName": "toktok",
   "description": "toktok syntax highlighting",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "engines": {
     "vscode": "^1.21.0"
   },

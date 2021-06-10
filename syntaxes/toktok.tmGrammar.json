@@ -47,8 +47,8 @@
       "patterns": [
         {
           "name": "string.quoted.single.toktok",
-          "begin": "'",
-          "end": "'",
+          "begin": "\"",
+          "end": "\"",
           "patterns": [
             {
               "name": "constant.character.escape.toktok",
